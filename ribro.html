@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RIBRO - Roxas Isabela Basketball Referees Organization</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap @5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background: linear-gradient(135deg, #003366, #0055aa);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      border-bottom: 5px solid #ffc107;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .sec-no {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .card {
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    table {
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #333;
+      color: #fff;
+      margin-top: 3rem;
+    }
+    .highlight {
+      background-color: #fff3cd !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <h1 class="logo">Roxas Isabela Basketball Referees Organization</h1>
+      <p class="sec-no">SEC Registration No. 2025040197717-63 | Roxas, Isabela</p>
+    </div>
+  </div>
+
+  <div class="container my-5">
+
+    <!-- League Info -->
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="alert alert-info text-center">
+          <strong>League:</strong> Burgos Inter Barangay |
+          <strong>Venue:</strong> Burgos Sports Arena |
+          <strong>Month:</strong> June 2025 |
+          <strong>Rate:</strong> ₱300 (Officiating), ₱100 (Table) |
+          <strong>Deduction:</strong> ₱10 per game
+        </div>
+      </div>
+    </div>
+
+    <!-- Officiating Officials -->
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h5>Officiating Officials - Salary Computation (June)</h5>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Name</th>
+              <th># of Games</th>
+              <th>Gross Pay (₱300)</th>
+              <th>Deductions</th>
+              <th>Net Pay</th>
+            </tr>
+          </thead>
+          <tbody id="officiating-body">
+            <!-- Filled by JS -->
+          </tbody>
+          <tfoot>
+            <tr class="fw-bold">
+              <td colspan="4" class="text-end">GRAND TOTAL:</td>
+              <td>₱15,370.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Table Officials -->
+    <div class="card">
+      <div class="card-header bg-success text-white">
+        <h5>Table Officials - Salary Computation (June)</h5>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Name</th>
+              <th># of Games</th>
+              <th>Gross Pay (₱100)</th>
+              <th>Deductions</th>
+              <th>Net Pay</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Filled by JS -->
+          </tbody>
+          <tfoot>
+            <tr class="fw-bold">
+              <td colspan="4" class="text-end">GRAND TOTAL:</td>
+              <td>₱3,780.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Total Earnings Summary -->
+    <div class="card">
+      <div class="card-header bg-warning text-dark">
+        <h5>Total Earnings Summary</h5>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Name</th>
+              <th>Officiating</th>
+              <th>Table Official</th>
+              <th>Total Earnings</th>
+            </tr>
+          </thead>
+          <tbody id="earnings-body">
+            <!-- Filled by JS -->
+          </tbody>
+          <tfoot>
+            <tr class="highlight">
+              <td><strong>GRAND TOTAL</strong></td>
+              <td><strong>₱15,370.00</strong></td>
+              <td><strong>₱3,780.00</strong></td>
+              <td><strong>₱19,150.00</strong></td>
+            </tr>
+            <tr>
+              <td colspan="3"><strong>Client Payment Received</strong></td>
+              <td><strong>₱20,000.00</strong></td>
+            </tr>
+            <tr>
+              <td colspan="3"><strong>Total RIBRO Net Income</strong></td>
+              <td><strong>₱850.00</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!-- Signatures -->
+    <div class="row mt-5">
+      <div class="col-md-4 text-center">
+        <p><strong>Prepared by:</strong></p>
+        <p class="mt-4 border-top pt-2">Mark Dylan Nobleza<br><em>Scheduler</em></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <p><strong>Checked by:</strong></p>
+        <p class="mt-4 border-top pt-2">Leovi Gil A. Balinbin<br><em>Treasurer</em></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <p><strong>Approved by:</strong></p>
+        <p class="mt-4 border-top pt-2">Ace Jason R. Bongolan<br><em>President</em></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Roxas Isabela Basketball Referees Organization (RIBRO). All rights reserved.
+  </footer>
+
+  <script>
+    // Data from Excel
+    const officiatingData = [
+      { name: "Renato T. Ancheta", games: 6, gross: 1740, deductions: 60, net: 1680 },
+      { name: "Gilbert G. Antalan", games: 6, gross: 1740, deductions: 60, net: 1680 },
+      { name: "Gaudencio Baja", games: 6, gross: 1740, deductions: 60, net: 1680 },
+      { name: "Leovemar A. Balinbin", games: 9, gross: 2610, deductions: 90, net: 2520 },
+      { name: "Leovigil A. Balinbin", games: 9, gross: 2610, deductions: 90, net: 2520 },
+      { name: "Walter S. Blaza", games: 1.5, gross: 435, deductions: 15, net: 420 },
+      { name: "Jonald Jun Jun P. Bolos", games: 1, gross: 290, deductions: 10, net: 280 },
+      { name: "Ace Jason R. Bongolan", games: 0.5, gross: 145, deductions: 5, net: 140 },
+      { name: "Mark Angelo R. Bongolan", games: 10, gross: 2900, deductions: 100, net: 2800 },
+      { name: "Mark D. Castillo", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Rodelito R. Castillo", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Rodrigo Jr. Codina", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Emerson Corpuz", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Manny A. Cortez", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Sonny M. Cortez", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Ronald C. Cudapas", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Ferdinand F. Dizon", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Elpidioe Gamboa", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Franklin A. Gasmin", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Ramil C. Guadilla", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Roberto V. Gumaru", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "JP Ilarde", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Perlindo Jr. Ilarde", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Jesse T. Martinez", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Marlou R. Mateo", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Edwin A. Morales", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Dexter C. Natividad", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Mark Dylan N. Nobleza", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Arjae B. Parotcha", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Reynaldo S. Pertubal", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Melecio M. Piñalber", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Adonis T. Reyes", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Dante B. Salacup", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Richard C. Simon", games: 0, gross: 0, deductions: 0, net: 0 },
+      { name: "Antonio Jr. Soriano", games: 1, gross: 290, deductions: 10, net: 280 },
+      { name: "Jun Jun Tabago", games: 1, gross: 290, deductions: 10, net: 280 },
+      { name: "Cresencio B. Yanos", games: 1, gross: 290, deductions: 10, net: 280 },
+      { name: "Reden G. Zalun", games: 1, gross: 290, deductions: 10, net: 280 }
+    ];
+
+    const tableData = [
+      { name: "Renato T. Ancheta", games: 6, gross: 540, deductions: 60, net: 480 },
+      { name: "Gilbert G. Antalan", games: 6, gross: 540, deductions: 60, net: 480 },
+      { name: "Gaudencio Baja", games: 6, gross: 540, deductions: 60, net: 480 },
+      { name: "Leovemar A. Balinbin", games: 9, gross: 810, deductions: 90, net: 720 },
+      { name: "Leovigil A. Balinbin", games: 9, gross: 810, deductions: 90, net: 720 },
+      { name: "Walter S. Blaza", games: 1.5, gross: 135, deductions: 15, net: 120 },
+      { name: "Jonald Jun Jun P. Bolos", games: 1, gross: 90, deductions: 10, net: 80 },
+      { name: "Ace Jason R. Bongolan", games: 0.5, gross: 45, deductions: 5, net: 40 },
+      { name: "Mark Angelo R. Bongolan", games: 1, gross: 90, deductions: 10, net: 80 },
+      { name: "Dexter C. Natividad", games: 1, gross: 90, deductions: 10, net: 80 },
+      { name: "Richard C. Simon", games: 1, gross: 90, deductions: 10, net: 80 }
+    ];
+
+    const totalEarnings = [
+      { name: "ANCHETA, RENATO T.", off: 1740, table: 540, total: 2280 },
+      { name: "ANTALAN, GILBERT G.", off: 1740, table: 540, total: 2280 },
+      { name: "BAJA, GAUDENCIO", off: 1740, table: 540, total: 2280 },
+      { name: "BALINBIN, LEOVEMAR A.", off: 2610, table: 810, total: 3420 },
+      { name: "BALINBIN, LEOVIGIL A.", off: 2610, table: 810, total: 3420 },
+      { name: "BLAZA ,WALTER S.", off: 435, table: 135, total: 570 },
+      { name: "BOLOS, JONALD JUN JUN P.", off: 290, table: 90, total: 380 },
+      { name: "BONGOLAN, ACE JASON R.", off: 145, table: 45, total: 190 },
+      { name: "BONGOLAN, MARK ANGELO R.", off: 2900, table: 90, total: 2990 },
+      { name: "CASTILLO, MARK D.", off: 0, table: 0, total: 0 },
+      { name: "CASTILLO ,RODELITO R.", off: 0, table: 0, total: 0 },
+      { name: "CODINA, RODRIGO JR.", off: 0, table: 0, total: 0 },
+      { name: "CORPUZ, EMERSON", off: 0, table: 0, total: 0 },
+      { name: "CORTEZ, MANNY A.", off: 0, table: 0, total: 0 },
+      { name: "CORTEZ, SONNY M.", off: 0, table: 0, total: 0 },
+      { name: "CUDAPAS, RONALD C.", off: 0, table: 0, total: 0 },
+      { name: "DIZON, FERDINAND F.", off: 0, table: 0, total: 0 },
+      { name: "GAMBOA, ELPIDIOE", off: 0, table: 0, total: 0 },
+      { name: "GASMIN, FRANKLIN A.", off: 0, table: 0, total: 0 },
+      { name: "GUADILLA, RAMIL C.", off: 0, table: 0, total: 0 },
+      { name: "GUMARU, ROBERTO V.", off: 0, table: 0, total: 0 },
+      { name: "ILARDE, JP", off: 0, table: 0, total: 0 },
+      { name: "ILARDE, PERLINDO JR.", off: 0, table: 0, total: 0 },
+      { name: "MARTINEZ,JESSE T.", off: 0, table: 0, total: 0 },
+      { name: "MATEO, MARLOU R.", off: 0, table: 0, total: 0 },
+      { name: "MORALES, EDWIN A.", off: 0, table: 0, total: 0 },
+      { name: "NATIVIDAD, DEXTER C.", off: 0, table: 90, total: 90 },
+      { name: "NOBLEZA, MARK DYLAN N.", off: 0, table: 0, total: 0 },
+      { name: "PAROTCHA, ARJAE B.", off: 0, table: 0, total: 0 },
+      { name: "PERTUBAL ,REYNALDO S.", off: 0, table: 0, total: 0 },
+      { name: "PIÑALBER, MELECIO M.", off: 0, table: 0, total: 0 },
+      { name: "REYES, ADONIS T.", off: 0, table: 0, total: 0 },
+      { name: "SALACUP, DANTE B.", off: 0, table: 0, total: 0 },
+      { name: "SIMON, RICHARD C.", off: 0, table: 90, total: 90 },
+      { name: "SORIANO, ANTONIO JR.", off: 290, table: 0, total: 290 },
+      { name: "TABAGO, JUN JUN", off: 290, table: 0, total: 290 },
+      { name: "YANOS, CRESENCIO B.", off: 290, table: 0, total: 290 },
+      { name: "ZALUN, REDEN G.", off: 290, table: 0, total: 290 }
+    ];
+
+    // Populate Officiating Table
+    const officiatingBody = document.getElementById("officiating-body");
+    officiatingData.forEach(p => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${p.name}</td>
+        <td>${p.games}</td>
+        <td>₱${p.gross.toLocaleString()}</td>
+        <td>₱${p.deductions.toLocaleString()}</td>
+        <td>₱${p.net.toLocaleString()}</td>
+      `;
+      officiatingBody.appendChild(row);
+    });
+
+    // Populate Table Officials Table
+    const tableBody = document.getElementById("table-body");
+    totalEarnings.forEach(p => {
+      if (p.table > 0 || p.off > 0) {
+        const found = tableData.find(t => t.name.includes(p.name.split(",")[0]));
+        if (found) {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${found.name}</td>
+            <td>${found.games}</td>
+            <td>₱${found.gross.toLocaleString()}</td>
+            <td>₱${found.deductions.toLocaleString()}</td>
+            <td>₱${found.net.toLocaleString()}</td>
+          `;
+          tableBody.appendChild(row);
+        }
+      }
+    });
+
+    // Populate Total Earnings Table
+    const earningsBody = document.getElementById("earnings-body");
+    totalEarnings.forEach(p => {
+      if (p.total > 0) {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${p.name}</td>
+          <td>₱${p.off.toLocaleString()}</td>
+          <td>₱${p.table.toLocaleString()}</td>
+          <td>₱${p.total.toLocaleString()}</td>
+        `;
+        earningsBody.appendChild(row);
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap @5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
